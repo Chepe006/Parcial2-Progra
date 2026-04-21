@@ -14,7 +14,14 @@ if (session_status() === PHP_SESSION_NONE) {
 <body>
 <header class="topbar">
     <div class="container">
-        <h1>VIDRID Ferretería</h1>
+        <div class="brand">
+            <img src="https://ferreteriavidri.com/public/images/Vidri_Alt.png?1652303456" alt="Logo VIDRID" class="logo">
+            <div class="brand-text">
+                <h1>VIDRID Ferretería</h1>
+                <p>Sistema de Inventario</p>
+            </div>
+        </div>
+
         <nav>
             <a href="index.php">Inventario</a>
             <?php if (isset($_SESSION['usuario'])): ?>
